@@ -1,0 +1,25 @@
+{
+  "name": "templateci",
+  "version": "1.0.0",
+  "description": "Node JS Test with Rancher Drone.io CI",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krister-Johansson/templateCI.git"
+  },
+  "author": "Krister Johansson <krister.johansson86@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Krister-Johansson/templateCI/issues"
+  },
+  "homepage": "https://github.com/Krister-Johansson/templateCI#readme",
+  "dependencies": {
+    "express": "^4.15.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
