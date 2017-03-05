@@ -1,10 +1,14 @@
 machine:
+  services:
+    - docker
   node:
     version: 0.10.22
-
+dependencies:
+  override:
+    - docker info
 deployment:
   hub:
     branch: master
     commands:
-      - docker login -e krister.johansson86@outlook.com -u swelogan -p MHL3U8
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push swelogan/templateic
