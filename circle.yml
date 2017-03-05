@@ -6,6 +6,7 @@ machine:
 dependencies:
   override:
     - docker info
+    - docker build -t swelogan/templateic .
 deployment:
   hub:
     branch: master
