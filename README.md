@@ -1,2 +1,2 @@
 # templateCI
-Node JS Test with Rancher Drone.io CI
+Node JS Test with Rancher circleci.com CI
