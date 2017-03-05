@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 0.10.22
+dependencies:
+  pre:
+    - npm install -g grunt coffee-script
+test:
+  override:
+    - grunt test:unit
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push swelogan/templateic
